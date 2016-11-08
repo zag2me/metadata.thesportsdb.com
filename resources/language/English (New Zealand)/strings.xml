@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<string id="30100">General</string>
+	<string id="30101">General Settings:</string>	
+	<string id="30105">Preferred Language</string>
+	<string id="30110">Extras for Members</string>	
+	<string id="30120">Username</string>
+	<string id="30130">Password</string>
+	<string id="30140">Website</string>		
+	<string id="30200">Artwork</string>
+	<string id="30201">Artwork Sources and Details:</string>
+	<string id="30205">Poster</string>
+	<string id="30210">Banner</string>
+	<string id="30220">Fanart</string>	
+	<string id="30230">Other</string>
+	<string id="30300">Genre</string>
+	<string id="30301">Genre Settings:</string>	
+	<string id="30305">Use "Sport"</string>	
+	<string id="30310">Use the Sports Category</string>	
+	<string id="30320">User-defined Genre</string>	
+	<string id="30330">Input</string>	
+	<string id="30400">Info</string>
+	<string id="30410">Addon Developer:</string>
+	<string id="30411">Peter</string>
+	<string id="30420">Sources:</string>		
+	<string id="30421">The Sports Database www.thesportsdb.com</string>
+</strings>

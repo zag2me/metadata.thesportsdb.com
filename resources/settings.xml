@@ -1,0 +1,47 @@
+﻿<!-- sv = se = Swedish | he = il = Hebrew | zh = cn = Chinese | ja = jp = Japanese !!! ACHTUNG!
+en de fr it es pt ja ru sv nl hu no he zh pl
+en de fr it es pt jp ru se nl hu no il cn pl
+-->
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+<!-- General Settings: -->
+    <category label="30100" id="section_general">
+        <setting type="sep" />
+        <setting label="30101" type="lsep" />
+        <setting type="sep" />	
+		<setting label="30105" type="select" values="de|en|es|fr|he||hu|it|ja|nl|no|pl|pt|ru|sv|zh" id="language" default="en"/>
+		<setting label="30110" type="bool" id="general_member" default="false"/>
+		<setting label="30120" type="text" id="general_member_l" default="Username" enable="eq(-1,true)" visible="eq(-1,true)" subsetting= "true"/>		
+		<setting label="30130" type="text" id="general_member_p" default="Password" enable="eq(-2,true)" visible="eq(-2,true)" subsetting= "true"/>
+		<setting label="30140" type="text" id="general_member_w" default="www.thesportsdb.com" enable="eq(-3,false)" visible="eq(-3,true)"/>			
+    </category>
+<!-- Artwork: -->
+    <category label="30200" id="section_artwork">
+        <setting type="sep" />
+        <setting label="30201" type="lsep" />
+        <setting type="sep" />
+        <setting label="30205" type="bool"      id="artwork_poster"       default="true" />
+        <setting label="30210" type="bool"      id="artwork_banner"       default="true" />
+        <setting label="30220" type="bool"      id="artwork_fanart"       default="true" />		
+        <setting label="30230" type="bool"      id="artwork_other"        default="true" />
+    </category>
+<!-- Genre: -->
+    <category label="30300" id="section_genre">
+        <setting type="sep" />
+        <setting label="30301" type="lsep" />
+        <setting type="sep" />		
+		<setting label="30305" type="bool" id="genre_sport" default="true"/>
+		<setting label="30310" type="bool" id="genre_category" default="true"/>
+		<setting label="30320" type="bool" id="genre_user" default="false"/>
+		<setting label="30330" type="text" id="genre_user_1" default="Sport Show" enable="eq(-1,true)" visible="eq(-1,true)" subsetting= "true"/>		
+    </category>	
+<!-- Info -->
+    <category label="30400" id="section_info">
+        <setting type="sep" />
+        <setting label="30410" type="lsep" />		
+        <setting label="30411" type="lsep" subsetting= "true"/>
+        <setting type="sep" />		
+        <setting label="30420" type="lsep" />		
+        <setting label="30421" type="lsep" subsetting= "true"/>
+    </category>	
+</settings>
