@@ -2,7 +2,7 @@
 <!-- metadata.common.thesportsdb.com -->
 <addon id="metadata.thesportsdb.com"
        name="The Sports Database"
-       version="0.9.2"
+       version="0.9.3"
        provider-name="Peter Streimelweger">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -22,8 +22,8 @@
     <website>http://www.thesportsdb.com</website>
     <email>zag@kodi.tv</email>
 	<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
 			<screenshot>resources/screenshot-01.jpg</screenshot>
 			<screenshot>resources/screenshot-02.jpg</screenshot>
 			<screenshot>resources/screenshot-03.jpg</screenshot>
