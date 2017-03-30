@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<strings>
+	<string id="30100">Geral</string>
+	<string id="30101">Configurações Gerais:</string>	
+	<string id="30105">Idioma Preferido</string>
+	<string id="30110">Extras para Membros</string>	
+	<string id="30120">Usuário</string>
+	<string id="30130">Senha</string>
+	<string id="30140">Site</string>		
+	<string id="30200">Artwork</string>
+	<string id="30201">Fontes Artwork e Detalhes:</string>
+	<string id="30205">Pôster</string>
+	<string id="30210">Banner</string>
+	<string id="30220">Fanart</string>	
+	<string id="30230">Outro</string>
+	<string id="30300">Gênero</string>
+	<string id="30301">Configurações de Gênero:</string>	
+	<string id="30305">Usar "Sport"</string>	
+	<string id="30310">Usar categoria de desporto</string>	
+	<string id="30320">Gênero definido pelo Usuário</string>	
+	<string id="30330">Entrada</string>	
+	<string id="30400">Informação</string>
+	<string id="30410">Desenvolvedor do Addon:</string>
+	<string id="30411">Peter Streimelweger</string>
+	<string id="30420">Fontes:</string>		
+	<string id="30421">The Sports Database www.thesportsdb.com</string>
+</strings>
