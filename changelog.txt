@@ -1,3 +1,8 @@
-﻿- 0.9.3 Move icon and fanart to root for backwards compatibility
+﻿- 0.9.5
+	Games coding updates
+	SXXXX: Season code, in that example is 2018-2019
+	E[YYYYMMDDHH]: Where YYYYMMDD is the game's date and HH are the last two digits of home team's code in The Sports Database 
+- 0.9.4	Retrieving games Season by Season
+- 0.9.3 Move icon and fanart to root for backwards compatibility
 - 0.9.2 Add new artwork and screenshots
 - 0.9.1 initial release

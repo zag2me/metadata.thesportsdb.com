@@ -2,8 +2,8 @@
 <!-- metadata.common.thesportsdb.com -->
 <addon id="metadata.thesportsdb.com"
        name="The Sports Database"
-       version="0.9.4"
-       provider-name="Peter Streimelweger, Zag">
+       version="0.9.5"
+       provider-name="Peter Streimelweger, Zag, Mitico">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
   </requires>
