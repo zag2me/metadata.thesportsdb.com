@@ -122,7 +122,7 @@
             <RegExp dest="4+" output="&lt;thumb aspect=&quot;poster&quot; type=&quot;season&quot; season=&quot;-1&quot;&gt;https://www.thesportsdb.com/\1/\2/\3/\4/\5&lt;/thumb&gt;" input="$$5" conditional="artwork_poster">
                 <expression>"strPoster":"https:\\/\\/(?:www\.)?thesportsdb.com\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([^"]*)",.*?</expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;episodeguide&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/1/search_all_seasons.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;/episodeguide&gt;" input="$$5">
+            <RegExp dest="4+" output="&lt;episodeguide&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/search_all_seasons.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;/episodeguide&gt;" input="$$5">
                 <expression noclean="1">"idLeague":(?:"|null,)?([0-9]*).*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;votes&gt;42&lt;/votes&gt;" input="$$5">
@@ -187,10 +187,10 @@
             <RegExp dest="4+" output="&lt;director&gt;&lt;/director&gt;" input="$$8">
                 <expression></expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idHomeTeam":"([0-9]*)",.*?</expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idAwayTeam":"([0-9]*)",.*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;studio&gt;\1&lt;/studio&gt;" input="$$8">
