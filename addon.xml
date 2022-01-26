@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!-- metadata.common.thesportsdb.com -->
 <addon id="metadata.thesportsdb.com"
        name="The Sports Database"
-       version="0.9.5"
+       version="0.9.6"
        provider-name="Peter Streimelweger, Zag, Mitico">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
@@ -22,19 +22,19 @@
     <website>http://www.thesportsdb.com</website>
     <email>zag@kodi.tv</email>
 	<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-			<screenshot>resources/screenshot-05.jpg</screenshot>
-			<screenshot>resources/screenshot-06.jpg</screenshot>
-			<screenshot>resources/screenshot-07.jpg</screenshot>
-			<screenshot>resources/screenshot-08.jpg</screenshot>
-			<screenshot>resources/screenshot-09.jpg</screenshot>
+		<icon>icon.png</icon>
+		<fanart>fanart.jpg</fanart>
+		<screenshot>resources/screenshot-01.jpg</screenshot>
+		<screenshot>resources/screenshot-02.jpg</screenshot>
+		<screenshot>resources/screenshot-03.jpg</screenshot>
+		<screenshot>resources/screenshot-04.jpg</screenshot>
+		<screenshot>resources/screenshot-05.jpg</screenshot>
+		<screenshot>resources/screenshot-06.jpg</screenshot>
+		<screenshot>resources/screenshot-07.jpg</screenshot>
+		<screenshot>resources/screenshot-08.jpg</screenshot>
+		<screenshot>resources/screenshot-09.jpg</screenshot>
 	</assets>
-	<news>Updated with new artwork resources</news>
+	<news>General fixes</news>
     <source>https://github.com/zag2me/metadata.thesportsdb.com</source>
     <platform>all</platform>
   </extension>
