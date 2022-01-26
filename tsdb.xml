@@ -179,10 +179,10 @@
             <RegExp dest="4+" output="&lt;director&gt;&lt;/director&gt;" input="$$8">
                 <expression></expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idHomeTeam":"([0-9]*)",.*?</expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idAwayTeam":"([0-9]*)",.*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;studio&gt;\1&lt;/studio&gt;" input="$$8">
