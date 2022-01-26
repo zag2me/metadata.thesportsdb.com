@@ -26,25 +26,14 @@
             <expression noclean="1"></expression>
         </RegExp>
     </GetSearchResults>
-
-    <GetEpisodeList dest="3">
-      <RegExp input="$$4" output="&lt;episodeguide&gt;\1&lt;/episodeguide&gt;" dest="3">
-  			<RegExp input="$$1" output="&lt;url cache=&quot;tsdb-$INFO[language]-season-\1.json&quot; function=&quot;GetSeasonEpisodeList&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/eventsseason.php?id=4387&amp;s=\1&lt;/url&gt;" dest="4">
-  				<expression repeat="yes">"strSeason":(?:"|null,)?([0-9]*).*?</expression>
-  			</RegExp>
-  			<expression noclean="1"/>
-  		</RegExp>
-    </GetEpisodeList>
-
-    <GetSeasonEpisodeList clearbuffers="no" dest="7">
-      <RegExp dest="7" output="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;&lt;episodeguide&gt;\1&lt;/episodeguide&gt;" input="$$4">
-        <RegExp dest="4" output="&lt;episode&gt;&lt;title&gt;\2&lt;/title&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookupevent.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;epnum&gt;\6\7\8\9&lt;/epnum&gt;&lt;season&gt;\4&lt;/season&gt;&lt;tsdbid&gt;\1&lt;/tsdbid&gt;&lt;aired&gt;\6-\7-\8&lt;/aired&gt;&lt;/episode&gt;" input="$$1">
-          <expression repeat="yes">"idEvent":(?:"|null,)?([0-9]*).*?"strEvent":(?:"|null,)?([^"]*).*?"idLeague":(?:"|null,)?([0-9]*).*?"strSeason":(?:"|null,)?([0-9]*).*?"intRound":(?:"|null,)?([0-9]*).*?"dateEvent":(?:"|null,)?(\d{4})\-(\d{2})\-(\d{2}).*?"idHomeTeam":"(?:1348)(\d{2})",.*?</expression>
+    <GetEpisodeList dest="7">
+        <RegExp dest="7" output="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;&lt;episodeguide&gt;\1&lt;/episodeguide&gt;" input="$$4">
+            <RegExp dest="4" output="&lt;episode&gt;&lt;title&gt;\2&lt;/title&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookupevent.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;epnum&gt;\5&lt;/epnum&gt;&lt;season&gt;\4&lt;/season&gt;&lt;tsdbid&gt;\1&lt;/tsdbid&gt;&lt;aired&gt;\6&lt;/aired&gt;&lt;/episode&gt;" input="$$1">
+                <expression repeat="yes">"idEvent":(?:"|null,)?([0-9]*).*?"strEvent":(?:"|null,)?([^"]*).*?"idLeague":(?:"|null,)?([0-9]*).*?"strSeason":(?:"|null,)?([0-9]*).*?"intRound":(?:"|null,)?([0-9]*).*?"dateEvent":(?:"|null,)?([^"]*).*?</expression>
+            </RegExp>
+            <expression noclean="1"></expression>
         </RegExp>
-        <expression noclean="1"></expression>
-      </RegExp>
-    </GetSeasonEpisodeList>
-
+    </GetEpisodeList>
     <GetDetails dest="7">
         <RegExp dest="7" output="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;&lt;details&gt;\1&lt;/details&gt;" input="$$4">
             <RegExp dest="5" output="\1" input="$$1">
@@ -122,7 +111,7 @@
             <RegExp dest="4+" output="&lt;thumb aspect=&quot;poster&quot; type=&quot;season&quot; season=&quot;-1&quot;&gt;https://www.thesportsdb.com/\1/\2/\3/\4/\5&lt;/thumb&gt;" input="$$5" conditional="artwork_poster">
                 <expression>"strPoster":"https:\\/\\/(?:www\.)?thesportsdb.com\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([^"]*)",.*?</expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;episodeguide&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/search_all_seasons.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;/episodeguide&gt;" input="$$5">
+            <RegExp dest="4+" output="&lt;episodeguide&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/eventsseason.php?id=\1&amp;amp;all=yes&lt;/url&gt;&lt;/episodeguide&gt;" input="$$5">
                 <expression noclean="1">"idLeague":(?:"|null,)?([0-9]*).*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;votes&gt;42&lt;/votes&gt;" input="$$5">
@@ -158,6 +147,9 @@
             <RegExp dest="4+" output="&lt;url function=&quot;GetLeagueTeamsAsTvShowActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_teams.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idLeague":"([0-9]*).*?</expression>
             </RegExp>
+            <RegExp dest="4+" output="&lt;url function=&quot;GetLeagueTeamsAsTvShowActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_teams.php?id=\1&lt;/url&gt;" input="$$1">
+                <expression>"strYoutube":(?:"|null,)?([a-z.]*)(?:\\)([/a-z]*)(?:\\)([^"]*)",.*?</expression>
+            </RegExp>
             <expression noclean="1"></expression>
         </RegExp>
     </GetDetails>
@@ -166,11 +158,11 @@
             <RegExp dest="8" output="\1" input="$$1">
                 <expression></expression>
             </RegExp>
-            <RegExp dest="4" output="&lt;uniqueid&gt;\1&lt;/uniqueid&gt;&lt;url&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookupevent.php?id=\1&amp;amp;all=yes&lt;/url&gt;" input="$$8">
-                <expression>"idEvent":(?:"|null,)?([0-9]*).*?</expression>
+            <RegExp dest="4" output="&lt;uniqueid&gt;&lt;/uniqueid&gt;" input="$$8">
+                <expression></expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;episode&gt;\1\2\3\4&lt;/episode&gt;" input="$$8">
-                <expression>"dateEvent":(?:"|null,)?(\d{4})\-(\d{2})\-(\d{2}).*?"idHomeTeam":"(?:1348)(\d{2})",.*?</expression>
+            <RegExp dest="4+" output="&lt;episode&gt;\1&lt;/episode&gt;" input="$$8">
+                <expression>"intRound":(?:"|null,)?([^"]*).*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;season&gt;\1&lt;/season&gt;" input="$$8">
                 <expression>"strSeason":(?:"|null,)?([^"]*).*?</expression>
@@ -180,17 +172,17 @@
             </RegExp>
             <RegExp dest="4+" output="&lt;plot&gt;\1&lt;/plot&gt;" input="$$10">
                 <RegExp dest="10" output="\1" input="$$8">
-                </RegExp>
                     <expression>strDescription$INFO[language]":(?:"|null,)?([^"]*).*?</expression>
+                </RegExp>
                 <expression>([\w\t\s\—()-:.а-яА-Я0-9ñÑáÁéÉíÍóÓúÚüÜ¡¿]*)</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;director&gt;&lt;/director&gt;" input="$$8">
                 <expression></expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idHomeTeam":"([0-9]*)",.*?</expression>
             </RegExp>
-            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/8235861265252/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
+            <RegExp dest="4+" output="&lt;url function=&quot;GetEventTeamsAsEpisodeActors&quot;&gt;https://www.thesportsdb.com/api/v1/json/1/lookup_all_players.php?id=\1&lt;/url&gt;" input="$$1">
                 <expression>"idAwayTeam":"([0-9]*)",.*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;studio&gt;\1&lt;/studio&gt;" input="$$8">
