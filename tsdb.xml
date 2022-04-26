@@ -189,7 +189,7 @@
                 <expression>"strTVStation":(?:"|null,)?([^"]*).*?</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;thumb&gt;https://www.thesportsdb.com/\1/\2/\3/\4/\5&lt;/thumb&gt;" input="$$8">
-                <expression>"strThumb":"https:\\/\\/www.thesportsdb.com\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([a-z]*)\\/([^"]*)",</expression>
+                <expression>"strThumb":"https:\/\/www.thesportsdb.com\/([a-z]*)\/([a-z]*)\/([a-z]*)\/([a-z]*)\/([^"]*)",</expression>
             </RegExp>
             <RegExp dest="4+" output="&lt;credits&gt;&lt;/credits&gt;" input="$$8">
                 <expression></expression>

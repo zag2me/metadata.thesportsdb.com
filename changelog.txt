@@ -1,4 +1,6 @@
-﻿- 0.9.5
+﻿- 0.9.7 Update settings translation to new format
+- 0.9.6 Fix date and round event matching
+- 0.9.5
 	Games coding updates
 	SXXXX: Season code, in that example is 2018-2019
 	E[YYYYMMDDHH]: Where YYYYMMDD is the game's date and HH are the last two digits of home team's code in The Sports Database 

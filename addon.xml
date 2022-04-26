@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!-- metadata.common.thesportsdb.com -->
 <addon id="metadata.thesportsdb.com"
        name="The Sports Database"
-       version="0.9.6"
+       version="0.9.7"
        provider-name="Peter Streimelweger, Zag, Mitico">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
   </requires>
-  <!-- next step: change this to xbmc.metadata.scraper.library -->
   <extension point="xbmc.metadata.scraper.tvshows"
              language="en"
              library="tsdb.xml"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="de">TSDB Sport Scraper</summary>
-    <summary lang="en">TSDB Sport Scraper</summary>
-    <description lang="de">TheSportsDB ist eine online Quelle von Sport Metadaten die von deren Nutzern gepflegt wird. Melde Dich an und beginne Veranstaltungen, Bildmaterial oder Informationen in die Datenbank einzufügen und am weiterem Wachstum beizutragen. Warum aktualisieren Du nicht deine Lieblingsmannschaft oder fügst neue Ergebnisse ein? Jeder neue Eintrag hilft der Community!</description>
-    <description lang="en">TheSportsDB is an online source of sports metadata that is maintained by its users. Sign up and start adding events, artwork or details to keep the database growing. Why not update your favourite team or add some results for an event. Any new data will help everyone!</description>
+      <summary lang="en">TSDB Sport Scraper</summary>
+      <description lang="en">TheSportsDB is an online source of sports metadata that is maintained by its users.</description>
     <platform>all</platform>
     <license>GPL v2.0</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=256198</forum>
     <website>http://www.thesportsdb.com</website>
-    <email>zag@kodi.tv</email>
+    <email>thedatadb@gmail.com</email>
 	<assets>
 		<icon>icon.png</icon>
 		<fanart>fanart.jpg</fanart>
